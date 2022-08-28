@@ -6,4 +6,9 @@
 
 <img src=bowser.jpeg alt="Bowser" width="200" height="300">  
 </body>
+window.addEventListener("gamepadconnected", (e) => {
+    console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+      e.gamepad.index, e.gamepad.id,
+      e.gamepad.buttons.length, e.gamepad.axes.length);
+  });
 </html>
